@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<!-- ================================================================
+     鴨鴨六爻 — 首頁（GitHub Pages 站台根目錄）
+     用途：站台首頁，避免根網址 404，並連向隱私政策與技術支援
+     圖片：logo.png（需與本檔放在同一層）
+     ================================================================ -->
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>鴨鴨六爻</title>
+<meta name="description" content="鴨鴨六爻 — 擲銅錢、擲骰起卦，掌上完成六爻排盤與解卦筆記。">
+<meta name="theme-color" content="#EFE9DA">
+<link rel="icon" href="logo.png">
+<link rel="apple-touch-icon" href="logo.png">
+<style>
+  :root{
+    --paper:#EFE9DA; --card:#FAF6EC; --ink:#26231E; --ink-2:#5C574E;
+    --seal:#9E3B2E; --line:#DDD3BF; --link:#8A3527;
+  }
+  @media (prefers-color-scheme: dark){
+    :root{
+      --paper:#17150F; --card:#201D16; --ink:#E7E0D0; --ink-2:#A69E8C;
+      --seal:#D08A7C; --line:#322E24; --link:#E0A18F;
+    }
+  }
+  *{box-sizing:border-box}
+  html{-webkit-text-size-adjust:100%}
+  body{
+    margin:0; background:var(--paper); color:var(--ink);
+    font-family:-apple-system,"PingFang TC","Microsoft JhengHei","Noto Sans TC",sans-serif;
+    line-height:1.85; letter-spacing:.01em;
+    min-height:100vh; display:flex; flex-direction:column;
+  }
+  .wrap{
+    flex:1; max-width:560px; width:100%; margin:0 auto;
+    padding:3.4rem 1.4rem 2rem; text-align:center;
+    display:flex; flex-direction:column; align-items:center;
+  }
+  .logo{
+    width:132px; height:132px; margin-bottom:1.4rem;
+    filter:drop-shadow(0 10px 22px rgba(60,45,25,.22));
+  }
+  h1{
+    font-family:"Kaiti TC","STKaiti","Songti TC","Noto Serif TC",serif;
+    font-size:2.3rem; font-weight:600; margin:.2rem 0 .3rem; letter-spacing:.08em;
+  }
+  .tagline{margin:.2rem 0 0; color:var(--ink-2); font-size:1.02rem}
+  .desc{margin:1rem 0 0; color:var(--ink-2); font-size:.95rem; max-width:22em}
+  .coming{
+    margin:1.8rem 0 0; font-size:.85rem; letter-spacing:.12em;
+    color:var(--seal); border:1px solid var(--line); border-radius:999px;
+    padding:.35rem 1rem; background:var(--card);
+  }
+  .links{
+    margin:2.6rem 0 0; width:100%;
+    display:flex; flex-direction:column; gap:.8rem;
+  }
+  .link-card{
+    display:flex; align-items:center; justify-content:space-between; gap:1rem;
+    padding:1rem 1.3rem; background:var(--card); border:1px solid var(--line);
+    border-radius:12px; text-decoration:none; color:var(--ink);
+    font-size:1.02rem; transition:border-color .15s;
+  }
+  .link-card:hover{border-color:var(--seal)}
+  .link-card:focus-visible{outline:2px solid var(--seal); outline-offset:3px}
+  .link-card .arrow{color:var(--ink-2); font-size:1.1rem; flex:none}
+  footer{
+    color:var(--ink-2); font-size:.82rem; text-align:center;
+    padding:1.2rem; letter-spacing:.03em;
+  }
+</style>
+</head>
+<body>
+  <main class="wrap">
+    <img class="logo" src="logo.png" alt="鴨鴨六爻標誌" width="132" height="132">
+    <h1>鴨鴨六爻</h1>
+    <p class="tagline">擲銅錢・擲骰起卦</p>
+    <p class="desc">掌上完成六爻排盤、命主記錄與解卦筆記。所有資料留在你的裝置上。</p>
+    <span class="coming">App Store 即將上架</span>
+
+    <nav class="links">
+      <a class="link-card" href="privacy.html">
+        <span>隱私政策</span><span class="arrow" aria-hidden="true">→</span>
+      </a>
+      <a class="link-card" href="support.html">
+        <span>技術支援</span><span class="arrow" aria-hidden="true">→</span>
+      </a>
+    </nav>
+  </main>
+
+  <footer>鴨鴨六爻</footer>
+</body>
+</html>
